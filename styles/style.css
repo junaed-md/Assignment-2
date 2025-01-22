@@ -93,6 +93,7 @@ body {
 
     background-color: rgba(247, 247, 247, 1);
     background-image: url('/assets/bg.png');
+    /* background-repeat: no-repeat; */
 }
 
 .curriculum-title {
@@ -138,6 +139,22 @@ body {
 .card-readmore {
     font-size: 1rem;
     font-weight: 700;
+}
+
+.fontawesome-div {
+    margin-top: 80px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.fa-solid {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    padding: 19px 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 30px;
 }
 
 /* Stories section */
@@ -232,6 +249,70 @@ body {
     padding-bottom: 60px;
 }
 
+/* Footer */
+.footer-sec {
+    background-color: rgba(1, 172, 253, 1);
+}
+
+.footer-container {
+    justify-content: space-between;
+    padding-top: 123px;
+    padding-bottom: 174px;
+}
+
+.kids-edu {
+    max-width: 400px;
+}
+
+.f-s-name {
+    gap: 10px;
+}
+
+.f-title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.6rem;
+    line-height: 39.5px;
+}
+
+.f-des {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 35px;
+}
+
+.aboutshchool {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.keeptouch {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.about-school a {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+}
+.social-icon{
+    display: flex;
+    gap: 10px;
+}
 
 @media screen and (max-width:576px) {
 
@@ -326,7 +407,10 @@ body {
         transform: translateY(-50%);
 
     }
-    .badge3, .badge4, .badge5{
+
+    .badge3,
+    .badge4,
+    .badge5 {
         background-color: #5D58F0;
     }
 
@@ -336,8 +420,52 @@ body {
         margin: 0px 23px 17px 23px;
         text-align: left;
     }
-    .btn2{
+
+    .btn2 {
         margin-top: 20px;
         padding-bottom: 40px;
+    }
+
+    .btn-primary {
+        background-color: rgba(17, 17, 17, 1);
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 10px 37px;
+    }
+
+    .fontawesome-div {
+        display: none;
+    }
+    .footer-container{
+        flex-direction: column;
+        padding: 65px 12px 60px 20px;
+    }
+    .f-title {
+        color: rgba(255, 255, 255, 1);
+        font-size: 2.23rem;
+        line-height: 33.5px;
+    }
+    .aboutshchool {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .keeptouch{
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 36px;
+    }
+
+    .f-des {
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 22px;
+    }
+    .social-icon{
+        gap: 8.5px;
     }
 }

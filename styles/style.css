@@ -323,6 +323,10 @@ li{
     padding-bottom: 60px;
 }
 
+.marquee{
+    padding-bottom: 10px;
+}
+
 /* Footer */
 .footer-sec {
     background-color: rgba(1, 172, 253, 1);
@@ -448,12 +452,6 @@ button:hover, a:hover, .card-readmore:hover, .icon:hover, .fa-solid:hover {
         text-align: center;
         margin: 10px 0;
     }
-
-
-
-
-
-
 
 
 

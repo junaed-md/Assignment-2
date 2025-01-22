@@ -48,6 +48,14 @@ body {
     color: rgba(135, 0, 255, 1);
 }
 
+.facilities {
+    color: rgb(5, 212, 223);
+}
+
+.admission {
+    color: rgb(93, 88, 239);
+}
+
 .btn-primary {
     background-color: rgba(17, 17, 17, 1);
     border-radius: 12px;
@@ -57,18 +65,84 @@ body {
     padding: 10px 47px;
 }
 
+.flex {
+    display: flex;
+}
+
 /* hero section */
 /* /* ----------------------------Hide----------------- */
 /* .hero-sec {
     display: none;
 } */
-
-.hero-sec {
-    background-color: rgba(247, 247, 247, 1);
+/* Navbar */
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
 }
 
-.flex {
-    display: flex;
+.n-s-name {
+    align-items: center;
+    gap: 11px;
+}
+
+.n-title {
+    color: rgb(17, 17, 17);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+
+.nav-btn1 {
+    border-radius: 12px;
+    border: none;
+    background: rgb(254, 163, 1);
+    padding: 10px 60px;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 30px;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 30px;
+    padding-right: 32px;
+}
+li{
+    list-style: none;
+}
+#toggle{
+    display: none;
+}
+
+.nav-links-div {
+    margin-right: 10px;
+}
+/* hamburger */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+/* hero section */
+.hero-sec,
+.nav-sec {
+    background-color: rgba(247, 247, 247, 1);
 }
 
 .hero-container {
@@ -309,12 +383,79 @@ body {
     line-height: 25px;
     text-align: left;
 }
-.social-icon{
+
+.social-icon {
     display: flex;
     gap: 10px;
 }
+/* Hover */
+/* For buttons */
+
+/* For nav links */
+.nav-links a:hover {
+    color: rgb(255, 136, 0); /* Orange on hover */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+button:hover, a:hover, .card-readmore:hover, .icon:hover, .fa-solid:hover {
+    transform: scale(1.05);
+    color: rgba(255, 136, 0, 1);
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+.nav-btn1:hover {
+    background-color: rgb(68, 69, 78); /* Slightly darker orange */
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
 
 @media screen and (max-width:576px) {
+
+    .hamburger {
+        display: flex;
+        border-bottom: 2px solid yellow; /* Yellow border for hamburger icon */
+    }
+    .nav-sec{
+        border-bottom: 1px solid #FEA301;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .n-title{
+        display: none;
+    }
+
+    .nav-links, .nav-btn1 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+
+
+
+
+
+
+
 
     .sec-container {
         /* max-width: 1160px; */
@@ -437,22 +578,26 @@ body {
     .fontawesome-div {
         display: none;
     }
-    .footer-container{
+
+    .footer-container {
         flex-direction: column;
         padding: 65px 12px 60px 20px;
     }
+
     .f-title {
         color: rgba(255, 255, 255, 1);
         font-size: 2.23rem;
         line-height: 33.5px;
     }
+
     .aboutshchool {
         font-size: 20px;
         font-weight: 600;
         margin-top: 32px;
         margin-bottom: 32px;
     }
-    .keeptouch{
+
+    .keeptouch {
         font-size: 22px;
         font-weight: 700;
         margin-top: 30px;
@@ -465,7 +610,8 @@ body {
         font-weight: 400;
         margin-top: 22px;
     }
-    .social-icon{
+
+    .social-icon {
         gap: 8.5px;
     }
 }

@@ -1,67 +1,343 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .quicksand-normal {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
- *{
+
+* {
     margin: 0;
- }
+}
+
+.raleway {
+    font-family: "Raleway", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28.3px;
+    color: rgb(128, 128, 128);
+    margin-bottom: 34px;
+}
 
 /* shared */
-body{
-    max-width:1440px ;
+body {
+    max-width: 1440px;
     margin: 0 auto;
 }
 
-.sec-container{
+.sec-container {
     max-width: 1160px;
     margin: auto;
 }
-.orange{
+
+.orange {
     color: rgb(254, 163, 1);
 }
-.sky-blue{
+
+.sky-blue {
     color: rgba(1, 172, 253, 1);
 }
-.black{
+
+.black {
     color: rgba(17, 17, 17, 1);
 }
 
-.btn-primary{
+.begoni {
+    color: rgba(135, 0, 255, 1);
+}
+
+.btn-primary {
     background-color: rgba(17, 17, 17, 1);
     border-radius: 12px;
     color: rgba(255, 255, 255, 1);
-    font-size:1.25rem;
+    font-size: 1.25rem;
     font-weight: 700;
     padding: 10px 47px;
 }
 
 /* hero section */
-/* ----------------------------Hide-----------------
-.hero-sec{
+/* /* ----------------------------Hide----------------- */
+/* .hero-sec {
     display: none;
 } */
-.hero-sec{
+
+.hero-sec {
     background-color: rgba(247, 247, 247, 1);
 }
 
-.hero-container{
+.flex {
     display: flex;
+}
+
+.hero-container {
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
-.hero-title{
-font-size: 3.5rem;
-font-weight: 700;
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
-.hero-title-des{
+.hero-title-des {
     font-size: 1.25rem;
     margin-top: 24px;
     margin-bottom: 24px;
+}
+
+/* Curriculum section */
+.curriculum-sec {
+
+    background-color: rgba(247, 247, 247, 1);
+    background-image: url('/assets/bg.png');
+}
+
+.curriculum-title {
+    text-align: center;
+    font-size: 2.87rem;
+    font-weight: 700;
+    padding-top: 60px;
+    margin-bottom: 80px;
+}
+
+.card-container {
+    gap: 28px;
+}
+
+.card-div {
+    text-align: center;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    padding: 50px 40px;
+}
+
+.card-div1 {
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-div2 {
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-div3 {
+    background: linear-gradient(180.00deg, #EEE1FF, #FFFFFF 40%), #FFFFFF;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.card-readmore {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Stories section */
+
+.story-sec {
+    background-image: url('/assets/bg.png'), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    ;
+}
+
+.story-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#st-card-div1 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.st-card-div {
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.st-card-div img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+#st-card-div1 img {
+    height: 55%;
+}
+
+.badge {
+    display: inline-block;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    border-radius: 47.93px;
+    padding: 10px 19px;
+    margin: 0;
+    margin-left: 38.35px;
+    transform: translateY(-50%);
+
+}
+
+.badge1 {
+    background: #3CD8E8;
+}
+
+.badge3 {
+    background: #5D58F0;
+}
+
+.badge2,
+.badge4,
+.badge5 {
+    background: rgb(149, 178, 38);
+}
+
+.st-card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 10px 38px 0px 38px;
+    text-align: left;
+}
+
+#st-card-div1 .st-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0px 38px 50px 38px;
+    text-align: left;
+}
+
+#st-card-div1 .st-card-des {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0px 68px 34px 38px;
+    text-align: left;
+}
+
+.btn2 button {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.btn2 {
+    margin-top: 80px;
+    padding-bottom: 60px;
+}
+
+
+@media screen and (max-width:576px) {
+
+    .sec-container {
+        /* max-width: 1160px; */
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .hero-container,
+    .card-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+
+    .hero-title-div {
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .hero-title-des {
+        font-size: 0.87rem;
+        color: rgba(17, 17, 17, 1);
+        font-weight: 500;
+    }
+
+    .hero-img-div img {
+        width: calc(100% - 20px);
+        margin: 20px 10px;
+    }
+
+    .btn-primary {
+        background-color: rgba(17, 17, 17, 1);
+        border-radius: 8px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 6px 24px;
+    }
+
+    .curriculum-title {
+        font-size: 1.6rem;
+        padding-top: 40px;
+        margin-bottom: 20px;
+
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .card-div {
+        padding: 36px 80px;
+    }
+
+    .card-title {
+        font-size: 1.01rem;
+        font-weight: 700;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+
+    .card-readmore,
+    .card-des {
+        font-size: 0.64rem;
+    }
+
+    .story-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 11px;
+    }
+
+    #st-card-div1 {
+        display: none;
+    }
+
+    .badge {
+        display: inline-block;
+        position: relative;
+        color: #FFFFFF;
+        font-size: 0.67rem;
+        border-radius: 28.5px;
+        padding: 6px 11px;
+        margin: 0;
+        margin-left: 22px;
+        transform: translateY(-50%);
+
+    }
+    .badge3, .badge4, .badge5{
+        background-color: #5D58F0;
+    }
+
+    .st-card-title {
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin: 0px 23px 17px 23px;
+        text-align: left;
+    }
+    .btn2{
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
 }
